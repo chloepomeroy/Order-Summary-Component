@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Red Hat Display", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);   
+    background: url("./images/pattern-background-mobile.svg") no-repeat center/100%;
+    background-color: hsl(225, 100%, 94%);
+    text-align: center;
+}
+
+button, h1, p {
+    font-family: inherit;
+    display: flex;
+    justify-content:center;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    margin: 1rem 0 1.25rem 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    display: flex;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+h3 {
+    color: hsl(228, 9%, 54%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin: 1rem;
+}
+
+#change {
+    border: none;
+    color: hsl(245, 75%, 52%);
+    background: none;
+    font-weight: 900;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#change:hover {
+    color: hsl(245, 83%, 68%);
+}
+
+#payment:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+
+#cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.container {
+    max-width: 350px;
+    background-color: #ffff;
+    border-radius: 1.5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 30px hsl(246, 58%, 86%)
+}
+
+.header-img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: flex;
+    align-items: top;
+}
+
+#card-content {
+    padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+    line-height: 1.5rem;
+}
+
+#order-item {
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 0.75rem;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.container .group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .group img {
+    margin: 0 1rem;
+}
+
+.container .group .text-group {
+    margin: 1rem 0.25rem;
+    line-height: 0.6;
+}
+
+#order-item .item-annual {
+    justify-content: center;
+}
+
+#order-item .item-price {
+    align-items: flex-end;
+}
+
+#payment {
+    background-color: hsl(245, 75%, 52%);
+    color: #ffff;    
+    border-radius: 0.75rem;
+    border: none;
+    font-weight:900;
+    font-size: 16px;
+    padding: 1rem 0rem;
+    width:100%;
+    cursor: pointer;
+    transition: 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0.5rem 0;
+    box-shadow: 1px 1px 20px hsl(246, 28%, 72%);
+}
+
+#cancel {
+    background-color: transparent;
+    color: hsl(228, 9%, 54%);    
+    border-radius: 0.75rem;
+    border: none;
+    font-weight:900;
+    font-size: 16px;
+    padding: 1rem 0rem;
+    width:100%;
+    cursor: pointer;
+    transition: 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 600px) {
+    body {
+        background: url("./images/pattern-background-desktop.svg") no-repeat top center/100%;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .container {
+        max-width: 450px;
+    }
+
+    #card-content {
+        padding: 2rem 2.75rem 2rem 2.75rem;
+        line-height: 1.5rem;
+    }
+}
